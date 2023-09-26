@@ -27,20 +27,18 @@ El endpoint debe requerir
 Este endpoint debe regresar un token de autenticación que será usado para el siguiente endpoint
 
 ### /api/payments
-
-Este endpoint podrá recibir un una lista de pagos de los cuales se calcularán los impuestos a pagar, siguiente las siguientes reglas:
+Este endpoint debe ser **privado**
+Este endpoint podrá recibir una lista de pagos de los cuales se calcularán los impuestos a pagar de acuerdo a las siguientes reglas:
 
 #### Reglas
-- Este endpoint debe ser **privado**
 - Ningún pago recibido tiene impuestos, a todos los pagos se les debe calcular el IVA
 - El IVA es del 16%
-- Si los pagos son en dólares, este incluye además un impuesto del 3% sobre el monto original/neto
+- Si los pagos son en dólares, este incluye además una comisión del 3% sobre el monto original/neto
 - Los pagos menores de 500 mxn están exentos de IVA
 - 1 USD = 20 MXN
 
 
 ### Ejemplos
-
 
 ```python
 
