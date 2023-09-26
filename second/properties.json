@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "state": "Ciudad de México",
+        "city": "Cuauhtémoc",
+        "property_type": "APARTMENT",
+        "price": 3000000,
+        "bedrooms": 2,
+        "bathrooms": 1,
+        "size": 100
+    },
+    {
+        "id": 2,
+        "state": "Chihuahua",
+        "city": "Chihuahua",
+        "property_type": "HOUSE",
+        "price": 4000000,
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "size": 2000
+    }
+]
+
