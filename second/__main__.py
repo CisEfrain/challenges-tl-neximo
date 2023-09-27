@@ -1,9 +1,13 @@
 from services import MatchingService
+import json
 
 
 if __name__ == '__main__':
-    searches = [] # TODO: read from text file
-    properties = [] # TODO: read from json file
+    with open('searches.txt', 'r', encoding='utf-8') as file:
+        searches = [line.strip() for line in file]
+    
+    with open('properties.json', 'r', encoding='utf-8') as file:
+        properties = json.load(file)
 
     matched_searches = MatchingService(
         searches=searches,
